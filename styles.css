@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.calculator {
+    max-width: 400px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#display {
+    width: 100%;
+    padding: 10px;
+    font-size: 28px;
+    text-align: right;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    background-color: #f7f7f7;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s, transform 0.1s;
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+button:hover {
+    background-color: #ccc;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Special styling for the equals button */
+button.equal {
+    grid-column: span 2;
+    background-color: #ff9800;
+    color: #fff;
+}
+
+/* Special styling for the clear button */
+button.clear {
+    background-color: #f44336;
+    color: #fff;
+}
+
+/* Special styling for the backspace button */
+button.backspace {
+    background-color: #2196f3;
+    color: #fff;
+}
+
+/* Special styling for the digits and operators buttons */
+button.digit, button.operator {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+/* Special styling for the function buttons */
+button.function {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+/* Special styling for the math constant buttons */
+button.constant {
+    background-color: #673ab7;
+    color: #fff;
+}

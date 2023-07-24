@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="appendExpression('^')">^</button>
+            <button onclick="appendExpression('%')">%</button>
+            <button onclick="deleteLastCharacter()">&lt;</button>
+            <button onclick="appendExpression('(')">(</button>
+            <button onclick="appendExpression(')')">)</button>
+            <button onclick="appendExpression('7')">7</button>
+            <button onclick="appendExpression('8')">8</button>
+            <button onclick="appendExpression('9')">9</button>
+            <button onclick="appendExpression('/')">/</button>
+            <button onclick="appendExpression('4')">4</button>
+            <button onclick="appendExpression('5')">5</button>
+            <button onclick="appendExpression('6')">6</button>
+            <button onclick="appendExpression('*')">*</button>
+            <button onclick="appendExpression('1')">1</button>
+            <button onclick="appendExpression('2')">2</button>
+            <button onclick="appendExpression('3')">3</button>
+            <button onclick="appendExpression('-')">-</button>
+            <button onclick="appendExpression('0')">0</button>
+            <button onclick="appendExpression('.')">.</button>
+            <button onclick="calculateExpression()">=</button>
+            <button onclick="appendExpression('+')">+</button>
+            <button onclick="appendExpression('Math.sqrt(')">√</button>
+            <button onclick="appendExpression('Math.sin(')">sin</button>
+            <button onclick="appendExpression('Math.cos(')">cos</button>
+            <button onclick="appendExpression('Math.tan(')">tan</button>
+            <button onclick="appendExpression('1/Math.sin(')">cosec</button>
+            <button onclick="appendExpression('1/Math.cos(')">sec</button>
+            <button onclick="appendExpression('1/Math.tan(')">cot</button>
+            <button onclick="appendExpression('Math.asin(')">asin</button>
+            <button onclick="appendExpression('Math.acos(')">acos</button>
+            <button onclick="appendExpression('Math.atan(')">atan</button>
+            <button onclick="appendExpression('Math.sinh(')">sinh</button>
+            <button onclick="appendExpression('Math.cosh(')">cosh</button>
+            <button onclick="appendExpression('Math.tanh(')">tanh</button>
+            <button onclick="appendExpression('Math.log(')">log</button>
+            <button onclick="appendExpression('Math.log10(')">log10</button>
+            <button onclick="appendExpression('Math.exp(')">exp</button>
+            <button onclick="appendExpression('Math.abs(')">abs</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
